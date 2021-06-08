@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Tu primera Opción en PCmaster👾👾
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/YeffDeviOs/Raven-Flores"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Make a wish⚛
-        </a>
-      </header>
-    </div>
+class App extends React.Component {
+render() { 
+return(
+  <nav>
+      <label className="logo">Calco.io</label>
+      <ul>
+        <li><a className="active" href="foo">Home</a></li>
+        <li><a href="foo">Nosotros</a></li>
+        <li><a href="foo">Servicios</a></li>
+        <li><a href="foo">Colaborá</a></li>
+        <li><a href="foo">Contacto</a></li>
+      </ul>
+  </nav>
+
   );
+  }
 }
 
 export default App;
